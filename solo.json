@@ -2,10 +2,15 @@
   "hostname_cookbook": {
     "hostsfile_ip": "127.0.1.1"
   },
+  "rvm": {
+    "default_ruby":       "2.1.2",
+    "user_default_ruby":  "2.1.2"
+  },
   "set_fqdn": "rack1.metrixmatrix.com",
 
   "run_list": [
     "recipe[mmi::default]",
-    "recipe[hostname::default]"
+    "recipe[hostname::default]",
+    "recipe[rvm::system]"
   ]
 }

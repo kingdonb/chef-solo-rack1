@@ -8,5 +8,7 @@ ipaddress (chef-ipaddress)
   https://github.com/harryyeh/chef-ipaddress.git
 rvm (chef-rvm)
   https://github.com/fnichol/chef-rvm.git
+chef_gem
+  https://github.com/hw-cookbooks/chef_gem.git
 sensu (sensu-chef)
   https://github.com/sensu/sensu-chef.git
