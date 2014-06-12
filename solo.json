@@ -1,0 +1,11 @@
+{
+  "hostname_cookbook": {
+    "hostsfile_ip": "127.0.1.1"
+  },
+  "set_fqdn": "rack1.metrixmatrix.com",
+
+  "run_list": [
+    "recipe[mmi::default]",
+    "recipe[hostname::default]"
+  ]
+}
