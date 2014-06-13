@@ -2,11 +2,11 @@
 
 # Usage: ./deploy.sh [host]
 
-host="${1:-kbarrett@lime-noapache.metrixmatrix.com}"
+host="${1:-kbarrett@rack1.metrixmatrix.com}"
 
-# The host key might change when we instantiate a new VM, so
-# we remove -R the old host key from known_hosts
-ssh-keygen -R "${host#*@}" 2> /dev/null
+# Changed the host keys already from the template lime-noapache
+# (they will not need to be changed again)
+#ssh-keygen -R "${host#*@}" 2> /dev/null
 
 tar cj . | ssh -o 'StrictHostKeyChecking no' "$host" '
 sudo rm -rf ~/chef &&
