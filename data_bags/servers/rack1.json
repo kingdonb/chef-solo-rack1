@@ -1,0 +1,13 @@
+{
+  "id": "rack1",
+  "interfaces": [
+    {
+      "name":             "eth0",
+      "address":          "192.168.40.52",
+      "netmask":          "255.255.0.0",
+      "gateway":          "192.168.0.1",
+      "dns-nameservers":  "192.168.50.50 192.168.50.51",
+      "dns-search":       "metrixmatrix.com"
+    }
+  ]
+}

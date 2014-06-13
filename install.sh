@@ -6,6 +6,10 @@ chef_binary=/usr/local/rvm/gems/ruby-2.1.2/bin/chef-solo
 rvm_profile=/etc/profile.d/rvm.sh
 if [ -f $rvm_profile ]; then
   . $rvm_profile
+else
+  echo "This script is intended for a system already bootstrapped with rvm"
+  # Todo: investigate "omnibus"
+  exit 1
 fi
 
 export rvmsudo_secure_path=1

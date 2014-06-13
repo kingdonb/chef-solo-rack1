@@ -1,0 +1,19 @@
+diff --git a/recipes/default.rb b/recipes/default.rb
+index f3cf830..4abea38 100644
+--- a/recipes/default.rb
++++ b/recipes/default.rb
+@@ -8,10 +8,10 @@ db = data_bag_item("servers",nodename)
+ interfaces = db['interfaces']
+ 
+ 
+-service "networking" do
+-	service_name "networking"
+-  action :restart
+-end
++#service "networking" do
++#	service_name "networking"
++#  action :restart
++#end
+ 
+ template "/etc/network/interfaces" do
+ 	source "interfaces.erb"

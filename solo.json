@@ -11,6 +11,7 @@
   "run_list": [
     "recipe[mmi::default]",
     "recipe[hostname::default]",
-    "recipe[rvm::system]"
+    "recipe[rvm::system]",
+    "recipe[ipaddress::default]"
   ]
 }
